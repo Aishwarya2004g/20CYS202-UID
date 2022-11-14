@@ -1,0 +1,222 @@
+<html>
+    <head>
+<title>Anokha tech fest</title><title>Amrita</title>
+<link rel="icon" href="C:\Users\govindasamy\Pictures\email pic.jpg">
+        <style>
+            body {
+              background-color: lightblue;
+            }
+            .about-section {
+              padding: 50px;
+              text-align: center;
+              background-color: #474e5d;
+              color: white;
+                    }
+                    body {font-family: Arial, Helvetica, sans-serif;}
+
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 2px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+
+.modal {
+  display: none;
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+ footer {
+          display: flex;   
+          background-color: #C0C0C0;
+          color: white;
+          justify-content: center;
+         }
+        div {
+         margin: 10px;
+         padding: 20px;
+       font-size: 30px;
+      justify-content: center;
+      }
+            </style>
+
+    </head>
+    <body>
+        <div class="about-section">
+            <p style="font-size:150%;"><b>Amrita vishwa vidypeetham</b></p>
+            <h1><p style="font-family:algerian">Anokha tech fest-2023</p></h1>
+          </div>
+<center>
+<br>
+<br>
+          <img src="C:\Users\govindasamy\Downloads\WhatsApp Image 2022-11-14 at 9.37.28 AM.jpeg" alt="profile" width="300" height="333">
+          <p style="font-size:150%"><b>Date:12th feb 2023<br>Venue:Anokha hub, Amrita vishwa vidyapeetham,coimbatore <br>Time:10am-5pm</b><br></p>
+            <button onclick="document.getElementById('id01').style.display='block'" style="height:4%;" >             Register      </button>
+          <br><br>
+   <a href="C:\Users\govindasamy\Downloads\fees.html">PAY REGISTRATION FEE</a>
+          <h3><p style="color:red"><i>“Anokha Techfest, the annual event of Amrita School of Engineering, Coimbatore provides an unique opportunity for students to participate in fun-filled and challenging events and workshops. The event throws open opportunities for students from all disciplines to challenge themselves and foster the “Can Do” attitude. One of the key highlights of the Anokha 2020 edition was the Green Anokha concept. It was so wonderful to see the students adopt and implement our Chancellor AMMA’s idea of “Living in Harmony with Nature”. It was plastic-free and eco-friendly Anokha – an initiative that will become a tradition!!”, Dr. Sasangan Ramanathan, Dean, Faculty of Engineering, Amrita Vishwa Vidyapeetham.</i></p></h3>
+<a href="C:\Users\govindasamy\Downloads\know.html ">Know more about anokha tech fest</a>  
+</center>         
+ <div id="id01" class="modal">
+  
+                <form class="modal-content animate" action="/action_page.php" method="post">
+                  <div class="imgcontainer">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                    <img src="C:\Users\govindasamy\Downloads\\WhatsApp Image 2022-11-14 at 9.37.28 AM.jpeg" alt="Avatar" width="300" height="333" class="avatar">
+                  </div>
+              
+                  <div class="container">
+                    <label for="name"><b>Name</b></label>
+    <input type="text" placeholder="Enter name" name="name" id="name" required>
+    <label for="roll number"><b>Roll number</b></label><br>
+    <input type="number" placeholder="Enter roll no." name="roll" id="roll" required><br><br>
+     <label for="college name"><b>College name</b></label>
+    <input type="text" placeholder="Enter college name" name="college" id="college" required>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" id="email" required>
+    <label for="gender"><b>Gender</b></label><br>
+    <input type="radio" name="gender" value="m" ><b> Male</b>
+<input type="radio" name="gender" value="f" ><b> Female</b>
+<input type="radio" name="gender" value="o" > <b>others</b><br><br>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+
+    <label for="psw-repeat"><b>Repeat Password</b></label>
+    <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
+    
+    
+                    </label>
+                  </div>
+              
+                  <div class="container" style="background-color:#f1f1f1">
+                    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Register</button>
+                    <span class="psw">Forgot <a href="#">password?</a></span>
+                  </div>
+                </form>
+              </div>
+              
+              <script>
+              // Get the modal
+              var modal = document.getElementById('id01');
+              
+              // When the user clicks anywhere outside of the modal, close it
+              window.onclick = function(event) {
+                  if (event.target == modal) {
+                      modal.style.display = "none";
+                  }
+              }
+              </script>
+<br>
+<p style="font-size:200%;"><marquee>!!Thank you!!</marquee></p>
+  <br><br><br>
+<footer>
+ <div><img src="C:\Users\govindasamy\Downloads\facebook.jpg" style="width:30px;height:30px;"><a href="https://www.facebook.com/">Facebook</a></div>
+<div><img src="C:\Users\govindasamy\Downloads\insta.jpg" style="width:30px;height:30px;"><a href="https://www.instagram.com/">Instagram</a></div>
+<div><img src="C:\Users\govindasamy\Downloads\twitter.jpg" style="width:30px;height:30px;"><a href="https://twitter.com/i/flow/login">Twitter</a></div>
+</footer>              
+
+
+
+
+    </body>
+    </html>
