@@ -1,0 +1,135 @@
+<html>
+<head>
+<title>Pay Fees</title>
+<link rel="icon" href="../images/anokha.jpeg">
+
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+.container {
+  padding: 16px;
+  background-color: white;
+}
+
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+.registerbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+
+a {
+  color: dodgerblue;
+}
+
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+<br><br>
+<form action="../index.html">
+  <div class="container">
+    <h1>Pay fees</h1>
+   
+    <hr>
+    <label for="name"><b>Name</b></label>
+    <input type="text" placeholder="Enter name" name="name" id="name" onchange="validateName()" required>
+    <label for="roll number"><b>Roll number</b></label><br>
+    <input type="text" placeholder="Enter roll no." name="roll" id="roll" required><br>
+     <label for="college name"><b>College name</b></label>
+    <input type="text" placeholder="Enter college name" name="college" id="college" required>
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter  Password" name="psw" id="psw" onchange="validatePassword()" required>
+    <label for="bank"><b>Choose Bank</b></label><BR>
+  <select name="Year" id="year">
+<option value="Select">Select</option>
+<option value="hdfc">HDFC</option>
+<option value="ICICI">ICICI</option>
+<option value="CANARA">CANARA BANK</option>
+<option value="OTHERS">OTHERS</option></select><br>
+ 
+    <hr>
+    <input type="checkbox" id="terms" name="terms" value="terms" required>
+<label for="terms"> I Agree</label><br>
+
+    <button type="submit" class="registerbtn">Pay fees</button>
+  
+ 
+ 
+<a href="../index.html">Go back to Home</a>
+</div>
+<script>
+function validateName() {
+      var name = document.getElementById("name").value;
+var y=name.split("");
+let sp=['*','_'];
+var arrlen=sp.length;
+for( var i=0; i<arrlen; i++)
+{
+if(y.includes(sp[i]))
+{
+window.alert("Enter valid name");
+}
+}
+if(name == null || name == " ")
+{
+window.alert("blank space");
+document.getElementById("name").focus()
+}
+console.log("name:" + name);
+}
+
+function validatePassword() {
+	let pwd = document.getElementById("psw").value;
+                 var pass= "^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$";
+if(!pwd.match(pass))
+{
+window.alert("Enter strong password");
+document.getElementById("psw").focus()
+}
+}
+</script>
+</form>
+
+</body>
+</html>
