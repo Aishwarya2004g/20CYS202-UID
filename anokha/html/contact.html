@@ -1,0 +1,151 @@
+<!--
+Author : Aishwarya G
+Created Date : December 2023
+Update Date : 15 January 2023
+Description : Cobtact page for Anokha 
+-->
+<html>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+<title>Contact us</title>
+<link rel="icon" href="../images/anokha.jpeg">
+<style>
+  body {
+    background-image: url('../images/teal.webp');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    }
+    
+  .box{
+    width: 500px;
+    height: 400px;
+    background: rgba(10, 9, 9,.7);
+    padding: 80px;
+    text-align: left;
+    color: #f5f5f5;
+    align-items: center;
+    justify-content: center;
+    margin-top: 120px;
+    margin-left: 350px;
+    border-radius: 10px;
+    }
+  header {
+    padding: 2px;
+    text-align: center;
+    background-color: teal;
+    color: white;
+  }
+  footer {
+    display: flex;  
+    background-color: rgb(41, 178, 182);
+    color: white;
+    justify-content: center;
+  }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  li {
+    float: left;
+    font-size:20px
+  }
+
+  li a {
+    display: block;
+    padding: 8px;
+    color : white;
+  }
+  .button {
+    background-color: #878987;
+    border: none;
+    color: white;
+    padding: 10px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 3px 1px;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+  <header>
+    <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="know.html">Know more about Anokha</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="gallery.html">Gallery</a></li><br>
+        <center>
+          <p style="font-family:algerian; font-size:35px">Anokha tech fest-2023<br>Contact Us
+          </p>
+        </center>
+    </ul>
+  </header> 
+<div class="box">
+<form action="../index.html">
+  <label for="name"><b><p style="font-size:150%">Name:</b></label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+  <input type="text" placeholder="Enter name" name="name" id="name" onchange="validateName()" required><br><br>
+  <label for="roll number"><b>Roll number:</b></label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+  <input type="text" placeholder="Enter roll no." name="roll" id="roll" required><br><br>
+  <label for="college name"><b>College name:</b></label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+  <input type="text" placeholder="Enter college name" name="college" id="college" required><br><br>
+  <label for="email"><b>Email:</b></label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+  <input type="text" placeholder="Enter Email id" name="email" id="email" onchange="validateEmail()" required><br><br>
+  <label for="textarea"><b>Feedback:</b></label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+  <textarea placeholder="Enter your Feedback/Queries here"></textarea><br><br>
+  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input class="button" type="submit" value="Submit">
+  </p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+  <a href="https://www.facebook.com/AmritaUniversity">
+    <img alt="Facebook" src="C:\Users\nandu\Downloads\anokha\images\facebook.jpg" width="42" height="42">
+  </a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+  <a href="https://twitter.com/AMRITAedu">
+    <img alt="Twitter" src="C:\Users\nandu\Downloads\anokha\images\twitter1.jpeg" width="42" height="42">
+  </a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+  <a href="https://www.instagram.com/anokhatechfest/?hl=en">
+    <img alt="Instagram" src="C:\Users\nandu\Downloads\anokha\images\insta.jpg" width="42" height="42">
+  </a>
+</form>
+</div>
+<br><br><br>
+<br><br><br>
+<script>
+  function validateName() {
+    var name = document.getElementById("name").value;
+    var y=name.split("");
+    let sp=['*','_'];
+    var arrlen=sp.length;
+    for( var i=0; i<arrlen; i++) {
+      if(y.includes(sp[i])) {
+        window.alert("Enter valid name");
+      }
+    }
+    if(name == null || name == " ") {
+      window.alert("blank space");
+      document.getElementById("name").focus()
+    }
+    console.log("name:" + name);
+  }
+  function validateEmail() {
+    var maill= /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    var mail = document.getElementById("email").value;
+    if (!mail.match(maill)) {
+      alert("Please enter a valid email address");
+      document.getElementById("email").focus()
+    }
+  }
+</script>
+<footer>
+  <p align="center" style="color:white; font-size:120%;">Copyright © Aishwarya G
+     <br> II B.Tech CSE(CYS) 
+     <br> Part of 20CYS202 - User Interface Design 
+     <br> Amrita Vishwa Vidyapeetham, Coimbatore
+  </p>
+</footer>
+</body>
+</html>
